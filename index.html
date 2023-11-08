@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Length to Eggs Converter</title>
+    <title>Eggsite</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Center content vertically */
+            height: 100vh;
         }
         .container {
             max-width: 400px;
@@ -72,7 +72,7 @@
         #result {
             font-size: 24px;
             color: #333;
-            max-height: 0; /* Initial height set to 0 */
+            max-height: 0;
             overflow: hidden;
             transition: max-height 0.5s ease;
         }
@@ -98,7 +98,7 @@
 </div>
 <script>
     // JavaScript
-    let isUsingInches = true;
+    let isUsingInches = false;
 
     document.getElementById("inchButton").addEventListener("click", () => {
         isUsingInches = true;
@@ -124,9 +124,9 @@
         resultElement.innerHTML = "That's equivalent to:";
 
         const birds = [
-            { name: "Chicken", size: 2.5 }, // Average size in inches
-            { name: "Duck", size: 3.5 },
-            { name: "Goose", size: 4.5 },
+            { name: "Chicken", size: 6 },
+            { name: "Duck", size: 6.5 },
+            { name: "Goose", size: 9 },
         ];
 
         birds.forEach(bird => {
